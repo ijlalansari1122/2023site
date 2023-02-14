@@ -45,5 +45,5 @@ gem "garth-jekyll-theme"
 source 'https://rubygems.org'
 gem "github-pages", "~> 228", group: :jekyll_plugins
 
-
+gem "jekyll-admin"
 gem "webrick", "~> 1.8"
