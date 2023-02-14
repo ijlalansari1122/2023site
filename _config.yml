@@ -25,8 +25,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
-domain: oba2311.github.io # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: "https://oba2311.github.io" # the base hostname and protocol for your site, e.g. http://example.com
+domain: ijlalansari1122.github.io # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: "https://ijlalansari1122.github.io/2023site/" # the base hostname and protocol for your site, e.g. http://example.com
 baseurl: "/2023site" # place folder name if the site is served in a subfolder
 
 # Build settings
