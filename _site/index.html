@@ -1,44 +1,95 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-US">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>My Blog - Your awesome title</title>
+
+
+  <link rel="stylesheet" href="/2023site/assets/styles.css">
+
+
+  <link rel="shortcut icon" href="">
+
+
 </head>
+
 <body>
- 
-{% for post in site.posts %}
-  <div class="post">
-    <h2>{{ post.title }}</h2>
-    <p>{{ post.date | date_to_string }}</p>
-    <div class="post-content">
-      {{ post.content }}
+
+  <div class="posts">
+
+    <div class="post">
+      <h2><a href="/2023/02/11/welcome-to-jekyll.html">Home-2</a></h2>
+      <p class="post-meta">26 march 2023</p>
+      <div class="post-content">
+      </div>
     </div>
+
+    <div class="post">
+      <h2><a href="/2016/08/25/aliquam.html">Aliquam</a></h2>
+      <p class="post-meta">25 Aug 2016</p>
+      <div class="post-content">
+        <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis
+          dolor imperdiet dolor mattis sagittis.
+          Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum
+          sit amet, fergiat.</p>
+      </div>
+    </div>
+
+    <div class="post">
+      <h2><a href="/2016/08/24/tempus.html">Tempus</a></h2>
+      <p class="post-meta">24 Aug 2016</p>
+      <div class="post-content">
+        <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis
+          dolor</p>
+      </div>
+    </div>
+
+    <div class="post">
+      <h2><a href="/2016/08/23/magna.html">Magna</a></h2>
+      <p class="post-meta">23 Aug 2016</p>
+      <div class="post-content">![test image](http://localhost:4000/assets/images/sher.jpg)
+
+        <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis
+          dolor imperdiet dolor mattis sagittis.
+          Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum
+          sit</p>
+      </div>
+    </div>
+
+    <div class="post">
+      <h2><a href="/2016/08/22/ipsum.html">Ipsum</a></h2>
+      <p class="post-meta">22 Aug 2016</p>
+      <div class="post-content">
+        <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis
+          dolor imperdiet dolor mattis sagittis.</p>
+      </div>
+    </div>
+
+    <div class="post">
+      <h2><a href="/2016/08/21/consequat.html">Consequat</a></h2>
+      <p class="post-meta">21 Aug 2016</p>
+      <div class="post-content">
+        <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis
+          dolor imperdiet dolor mattis sagittis.
+          Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum
+          sit</p>
+      </div>
+    </div>
+
+    <div class="post">
+      <h2><a href="/2016/08/20/etiam.html">Etiam</a></h2>
+      <p class="post-meta">20 Aug 2016</p>
+      <div class="post-content">
+        <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis
+          dolor</p>
+      </div>
+    </div>
+
   </div>
-{% endfor %}
 
-
-<!-- 
-{% for post in site.posts %}
-## {{ post.Word2Vec }}
-
-<div class="post-content">
-    {{ post.content }}
-</div>
-{% endfor %} -->
-
-## Home
-- [Home](/Test2/index.html)
-# Hello there
-### Posts
-- [etiam](/_posts/2016-8-20-etiam.md)
-- [Tempus](/2023site/2016/08/24/tempus.html)
-- [Magna](/2023site/2016/08/23/magna.html)
-- [Ipsum](/2023site/2016/08/22/ipsum.html)
-- [Consequat](/2023site/2016/08/21/consequat.html)
-
-
-
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700|Neuton:400,700" rel="stylesheet">
 </body>
 
 </html>
