@@ -1,203 +1,44 @@
-<!DOCTYPE html>
-<html lang="en-US">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-			<title>Home - Your awesome title</title>
-		
-
-		<link rel="stylesheet" href="/2023site/assets/styles.css">
-
-		
-			<link rel="shortcut icon" href="">
-		
-
-	</head>
-	<body>
-
-		<header class="header">
-  <div class="container">
-    
-    <nav class="nav">
-  <ul class="list list--nav">
-    
-      
-    
-      
-        <li class="item  item--nav">
-          
-            <a href="/2023site/about/">About</a>
-          
-        </li>
-      
-    
-      
-    
-      
-        <li class="item  item--nav  item--current">
-          
-            <a href="/2023site/">Home</a>
-          
-        </li>
-      
-    
-      
-    
-  </ul>
-</nav>
-
-  </div>
-</header>
-
-
-<main class="main  container">
-
-	<div class="content">
-
-    <article class="article  article--page  typeset">
-
-			
-			<h1></h1>
-
-			
-
-
-    </article>
-
-    
-
-  <ul class="list  list--posts">
-    
-      <li class="item  item--post">
-        <article class="article  article--post  typeset">
-
-          <h2><a href="/2023site/2016/08/25/aliquam.html">Aliquam</a></h2>
-          
-
-<small class="small  post-meta">
-  
-    
-  &nbsp;&middot;&nbsp;<time datetime="2016-08-25T00:00:00+05:00" class="time">25 Aug 2016</time>
-</small>
-
-          <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
-Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat.</p>
-
-
-        </article>
-      </li>
-    
-      <li class="item  item--post">
-        <article class="article  article--post  typeset">
-
-          <h2><a href="/2023site/2016/08/24/tempus.html">Tempus</a></h2>
-          
-
-<small class="small  post-meta">
-  
-    
-  &nbsp;&middot;&nbsp;<time datetime="2016-08-24T00:00:00+05:00" class="time">24 Aug 2016</time>
-</small>
-
-          <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor</p>
-
-
-        </article>
-      </li>
-    
-      <li class="item  item--post">
-        <article class="article  article--post  typeset">
-
-          <h2><a href="/2023site/2016/08/23/magna.html">Magna</a></h2>
-          
-
-<small class="small  post-meta">
-  
-    
-  &nbsp;&middot;&nbsp;<time datetime="2016-08-23T00:00:00+05:00" class="time">23 Aug 2016</time>
-</small>
-
-          <!-- ![test image](http://localhost:4000/assets/images/sher.jpg) -->
-
-
-
-        </article>
-      </li>
-    
-      <li class="item  item--post">
-        <article class="article  article--post  typeset">
-
-          <h2><a href="/2023site/2016/08/22/ipsum.html">Ipsum</a></h2>
-          
-
-<small class="small  post-meta">
-  
-    
-  &nbsp;&middot;&nbsp;<time datetime="2016-08-22T00:00:00+05:00" class="time">22 Aug 2016</time>
-</small>
-
-          <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>
-
-
-        </article>
-      </li>
-    
-      <li class="item  item--post">
-        <article class="article  article--post  typeset">
-
-          <h2><a href="/2023site/2016/08/21/consequat.html">Consequat</a></h2>
-          
-
-<small class="small  post-meta">
-  
-    
-  &nbsp;&middot;&nbsp;<time datetime="2016-08-21T00:00:00+05:00" class="time">21 Aug 2016</time>
-</small>
-
-          <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
-Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit</p>
-
-
-        </article>
-      </li>
-    
-      <li class="item  item--post">
-        <article class="article  article--post  typeset">
-
-          <h2><a href="/2023site/2016/08/20/etiam.html">Etiam</a></h2>
-          
-
-<small class="small  post-meta">
-  
-    
-  &nbsp;&middot;&nbsp;<time datetime="2016-08-20T00:00:00+05:00" class="time">20 Aug 2016</time>
-</small>
-
-          <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor</p>
-
-
-        </article>
-      </li>
-    
-  </ul>
-
-
-
-
-  </div>
-
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="copyright  typeset">
-      <small class="small">&copy; Your awesome title 2023</small>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ 
+{% for post in site.posts %}
+  <div class="post">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.date | date_to_string }}</p>
+    <div class="post-content">
+      {{ post.content }}
     </div>
   </div>
-</footer>
+{% endfor %}
+
+
+<!-- 
+{% for post in site.posts %}
+## {{ post.Word2Vec }}
+
+<div class="post-content">
+    {{ post.content }}
+</div>
+{% endfor %} -->
+
+## Home
+- [Home](/Test2/index.html)
+# Hello there
+### Posts
+- [etiam](/_posts/2016-8-20-etiam.md)
+- [Tempus](/2023site/2016/08/24/tempus.html)
+- [Magna](/2023site/2016/08/23/magna.html)
+- [Ipsum](/2023site/2016/08/22/ipsum.html)
+- [Consequat](/2023site/2016/08/21/consequat.html)
 
 
 
-		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700|Neuton:400,700" rel="stylesheet">
-	</body>
+</body>
+
 </html>
