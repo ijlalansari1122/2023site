@@ -1,6 +1,17 @@
-# Home -
+# Home
 
-Hello there
+
+{% for post in site.posts %}
+  <div class="post">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.date | date_to_string }}</p>
+    <div class="post-content">
+      {{ post.content }}
+    </div>
+  </div>
+{% endfor %}
+
+
 
 {% for post in site.posts %}
 ## {{ post.Word2Vec }}
